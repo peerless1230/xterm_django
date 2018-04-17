@@ -6,8 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# local_dbfile
+db.sqlite3
+
 # Distribution / packaging
 .Python
+.idea/
 env/
 build/
 develop-eggs/
