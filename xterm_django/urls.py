@@ -20,6 +20,6 @@ import views
 
 urlpatterns = [
     url(r'^$', views.index_view, name='index'),
-    url(r'^webssh$', views.ssh_with_websocket, name='index'),
+    url(r'^webssh$', views.ssh_with_websocket, name='webssh'),
 
 ] + static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
