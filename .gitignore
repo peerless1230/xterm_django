@@ -9,6 +9,8 @@ __pycache__/
 # local_dbfile
 db.sqlite3
 
+# collected static files
+static/
 # Distribution / packaging
 .Python
 .idea/

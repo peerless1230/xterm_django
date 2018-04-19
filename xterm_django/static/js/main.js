@@ -1,6 +1,10 @@
 function openTerminal(options) {
+    if (!$.isEmptyObject($('.terminal')[0])){
+        alert("请先退出当前Terminal(CTRL+D或exit)")
+        return
+    }
     var client = new WSSHClient();
-    $.isEmptyObject(term)
+
     var term = new Terminal({cols: 80, rows: 24, screenKeys: true, useStyle: true});
     term.on('data', function (data) {
         client.sendClientData(data);
@@ -35,6 +39,7 @@ function openTerminal(options) {
     })
 
 }
+
 
 var charWidth = 6.2;
 var charHeight = 15.2;
