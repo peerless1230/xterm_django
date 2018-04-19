@@ -2,7 +2,7 @@
 
 
 ### 简介
-- 参考自[xsank/webssh](https://github.com/xsank/webssh)，原项目基于tornado及其WebsocketHandler，并利用IOLoop处理所有IO操作: `paramiko ssh连接Recv`和`websocket返回`的数据
+- 参考自[xsank/webssh](https://github.com/xsank/webssh)，原项目基于tornado及其WebsocketHandler，并利用IOLoop处理所有IO操作: `paramiko ssh连接Recv`和`websocket请求`的连接
 - 本项目利用`dwebsocket`在`Django`中加入websocket连接，原有特性均保留了下来，完善了原有Epoll IO模型的处理逻辑
 - IOLoop中会维护每一个Webssh终端的`paramiko ssh shell`对象的Recv文件描述符，及其请求对应的View线程中Websocket连接对象
 
