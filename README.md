@@ -14,7 +14,7 @@
 ```
 git clone https://github.com/peerless1230/xterm_django
 cd xterm_django
-python manage.py collectstatic
+echo yes | python manage.py collectstatic
 python manage.py runserver 0.0.0.0:8088
 ```
 
